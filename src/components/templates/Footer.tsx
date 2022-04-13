@@ -1,56 +1,38 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import elementLogo from '../../assets/element-logo.svg';
-import twitterLogo from '../../assets/twitter-logo.png';
+import { Grid } from '@material-ui/core';
+import githubLogo from '../../assets/github-logo.png';
+import twitterLogo from '../../assets/twitter-logo-white.png';
 
 const useStyles = makeStyles(({ breakpoints }) => ({
   container: {
-    paddingTop: '.5rem',
-    paddingRight: '2rem',
-    paddingLeft: '2rem',
-    boxSizing: 'border-box',
-    marginTop: 'auto',
-    [breakpoints.down('sm')]: {
-      paddingRight: '.8rem',
-      paddingLeft: '.8rem',
-    },
-  },
-  wrapper: {
-    width: '100%',
-    paddingBottom: '1.2rem',
-    bottom: '0',
     display: 'flex',
     alignItems: 'center',
-    zIndex: 2000,
+    backgroundImage: 'linear-gradient(to right, #2eb3ff, #000000)',
+    padding: '.7rem 10rem',
+    width: '100%',
     [breakpoints.down('sm')]: {
-      paddingBottom: '.6rem',
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
     },
-  },
-  small: {
-    fontSize: '14px',
-    color: '#868686',
-    marginRight: '1rem',
-    [breakpoints.down('sm')]: {
-      fontSize: '10px',
+    [breakpoints.down('xs')]: {
+      paddingRight: '4rem',
+      paddingLeft: '4em',
     },
   },
   logo: {
-    object: 'fit',
-    width: '30px',
-    marginRight: '20px',
-    [breakpoints.down('sm')]: {
-      width: '24px',
-    },
+    objectFit: 'contain',
+    width: '36px',
+    marginLeft: '10px',
   },
-  texts: {
+  contentLeft: {
+    color: 'white',
+    textAlign: 'left',
+  },
+  contentRight: {
     display: 'flex',
-    flexDirection: 'column',
-    color: '#ffff',
-  },
-  sns: {
-    [breakpoints.down('xs')]: {
-      display: 'flex',
-    },
+    justifyContent: 'flex-end',
+    alignItems: 'center',
   },
 }));
 
@@ -60,34 +42,13 @@ const Footer: React.FunctionComponent = () => {
 
   return (
     <footer className={classes.container}>
-      <div className={classes.wrapper}>
-        <div className={classes.texts}>
-          <small className={classes.small}>{currentYear} HashCloak Inc.</small>
-          <small className={classes.small}>
-            Made with ❤️ by{' '}
-            <a
-              href="https://hashcloak.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HashCloak
-            </a>
-          </small>
-        </div>
-        <div className={classes.sns}>
+      <Grid container spacing={1}>
+        <Grid item xs={6} className={classes.contentLeft}>
+          <p>{currentYear} HashCloak Inc.</p>
+        </Grid>
+        <Grid item xs={6} style={{}} className={classes.contentRight}>
           <a
-            href="https://app.element.io/#/room/#meson-community:matrix.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={elementLogo}
-              alt="element-logo"
-              className={classes.logo}
-            />
-          </a>
-          <a
-            href="https://twitter.com/MesonMixnet"
+            href="https://twitter.com/hashcloak"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -97,8 +58,15 @@ const Footer: React.FunctionComponent = () => {
               className={classes.logo}
             />
           </a>
-        </div>
-      </div>
+          <a
+            href="https://github.com/hashcloak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubLogo} alt="github-logo" className={classes.logo} />
+          </a>
+        </Grid>
+      </Grid>
     </footer>
   );
 };
