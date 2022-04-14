@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core';
 import Navbar from 'components/templates/Navbar';
 import MainVisual from 'components/templates/MainVisual';
 import Services from 'components/templates/Services';
+import Mission from 'components/templates/Mission';
 import Footer from '../templates/Footer';
 
 const useStyles = makeStyles(({ breakpoints, palette }) => ({
@@ -34,6 +35,7 @@ const HomePage: React.FC = () => {
       <div className={classes.container}>
         <Navbar />
         <MainVisual />
+        <Mission />
         <Services />
         <Footer />
       </div>
