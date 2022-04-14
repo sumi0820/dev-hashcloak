@@ -9,10 +9,11 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundImage: 'linear-gradient(to right, #2eb3ff, #000000)',
-    padding: '.7rem 10rem',
+    padding: '.7rem 25rem',
     position: 'fixed',
     top: '0',
     width: '100%',
+    boxShadow: '0 1px 1px -1px rgba(0, 0, 0, 0.5)',
     [breakpoints.down('sm')]: {
       paddingRight: '8rem',
       paddingLeft: '8rem',

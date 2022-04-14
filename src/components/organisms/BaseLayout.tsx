@@ -9,9 +9,9 @@ type ContainerProps = {
 const useStyles = makeStyles(({ breakpoints }) => ({
   section: {
     display: 'flex',
-    overflowX: 'hidden',
     justifyContent: 'center',
-    flex: '1',
+    flexDirection: 'column',
+    padding: '.7rem 10rem',
     [breakpoints.down('sm')]: {
       display: 'flex',
       flexDirection: 'column',

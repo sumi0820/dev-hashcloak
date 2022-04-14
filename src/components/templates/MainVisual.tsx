@@ -1,12 +1,17 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import SocialMedia from 'components/organisms/SocialMedia';
+import bg from '../../assets/main-visual-bg.png';
 
-const useStyles = makeStyles(({ breakpoints, palette }) => ({
+const useStyles = makeStyles(({ breakpoints }) => ({
   container: {
     display: 'flex',
-    justifyContent: 'space-around',
     alignItems: 'center',
+    justifyContent: 'space-between',
     height: '100vh',
+    backgroundImage: 'linear-gradient(to right bottom, #2eb3ff, #fff)',
+    color: 'white',
+    padding: '.7rem 25rem',
     [breakpoints.down('xs')]: {
       flexDirection: 'column-reverse',
       justifyContent: 'center',
@@ -21,86 +26,12 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
       alignItems: 'center',
     },
   },
-  title: {
-    color: palette.primary.main,
-    fontWeight: 'bold',
-    marginTop: '0px',
-
-    [breakpoints.down('sm')]: {
-      fontSize: '60px',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '48px',
-    },
-  },
   subtext: {
-    maxWidth: '600px',
-    fontSize: '1.5rem',
-    marginTop: '-60px',
-    fontStyle: 'italic',
-    lineHeight: '1.1em',
-    [breakpoints.down('sm')]: {
-      fontSize: '24px',
-      marginTop: '-30px',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '20px',
-      marginTop: '-10px',
-    },
+    width: '500px',
+    margin: '10px 0',
   },
   wrapperRight: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  logo: {
-    objectFit: 'contain',
-    maxHeight: '300px',
-    [breakpoints.down('sm')]: {
-      objectFit: 'contain',
-      maxHeight: '200px',
-    },
-    [breakpoints.down('xs')]: {
-      objectFit: 'contain',
-      maxHeight: '150px',
-    },
-  },
-  text: {
-    fontWeight: 'normal',
-    marginTop: '-30px',
-    color: palette.secondary.dark,
-    [breakpoints.down('sm')]: {
-      fontSize: '24px',
-      marginTop: '-10px',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '20px',
-      marginTop: '-6px',
-    },
-  },
-
-  buttons: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyItems: 'space-between',
-  },
-  button: {
-    backgroundColor: palette.primary.main,
-    color: '#ffffff',
-    margin: '0 5px',
-    '&:hover': {
-      background: palette.primary.dark,
-      color: '#ffffff',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '.7rem',
-      margin: '0 3px',
-      padding: '.2rem .2rem .2rem .2rem',
-    },
-  },
-  card: {
-    margin: 48,
-    width: '300px',
+    [breakpoints.down('xs')]: {},
   },
 }));
 
@@ -110,7 +41,20 @@ const MainVisual: React.FC = () => {
   return (
     <div className={classes.container} id="main">
       <div className={classes.wrapperLeft}>
-        <h1>Main Visual</h1>
+        <div>
+          <h2>Privacy</h2>
+          <h2>Scalability</h2>
+          <h2>Distributed Systems</h2>
+        </div>
+        <h5 className={classes.subtext}>
+          Hashcloak is an independent research lab that targets problems
+          surrounding privacy-preserving technologies and blockchain
+          infrastructure design.
+        </h5>
+        <SocialMedia />
+      </div>
+      <div className={classes.wrapperRight}>
+        <img src={bg} alt="main-visual-bg" />
       </div>
     </div>
   );

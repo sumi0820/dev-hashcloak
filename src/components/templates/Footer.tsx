@@ -1,8 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
-import githubLogo from '../../assets/github-logo.png';
-import twitterLogo from '../../assets/twitter-logo-white.png';
+import SocialMedia from 'components/organisms/SocialMedia';
 
 const useStyles = makeStyles(({ breakpoints }) => ({
   container: {
@@ -20,19 +19,14 @@ const useStyles = makeStyles(({ breakpoints }) => ({
       paddingLeft: '4em',
     },
   },
-  logo: {
-    objectFit: 'contain',
-    width: '36px',
-    marginLeft: '10px',
-  },
   contentLeft: {
     color: 'white',
     textAlign: 'left',
+    fontWeight: 'bold',
   },
   contentRight: {
     display: 'flex',
     justifyContent: 'flex-end',
-    alignItems: 'center',
   },
 }));
 
@@ -46,25 +40,8 @@ const Footer: React.FunctionComponent = () => {
         <Grid item xs={6} className={classes.contentLeft}>
           <p>{currentYear} HashCloak Inc.</p>
         </Grid>
-        <Grid item xs={6} style={{}} className={classes.contentRight}>
-          <a
-            href="https://twitter.com/hashcloak"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={twitterLogo}
-              alt="twitter-logo"
-              className={classes.logo}
-            />
-          </a>
-          <a
-            href="https://github.com/hashcloak"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={githubLogo} alt="github-logo" className={classes.logo} />
-          </a>
+        <Grid item xs={6} className={classes.contentRight}>
+          <SocialMedia />
         </Grid>
       </Grid>
     </footer>

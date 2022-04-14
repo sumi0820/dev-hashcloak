@@ -12,7 +12,6 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     flexDirection: 'column',
     margin: '0',
     minHeight: '100vh',
-    // For new page
     overflowX: 'hidden',
     [breakpoints.down('md')]: {},
     [breakpoints.down('sm')]: {},

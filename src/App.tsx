@@ -13,6 +13,8 @@ const theme = createTheme({
         body: {
           backgroundColor: '#FBF8F8',
           WebkitFontSmoothing: 'auto',
+          margin: 0,
+          padding: 0,
         },
         h1: {
           fontSize: '96px',
@@ -27,6 +29,8 @@ const theme = createTheme({
         h2: {
           fontSize: '60px',
           fontFamily: 'Montserrat,sans-serif',
+          margin: '0 !important',
+          lineHeight: '90%',
           [breakpoints.up('sm')]: {
             fontSize: '48px',
           },
@@ -57,6 +61,8 @@ const theme = createTheme({
         h5: {
           fontSize: '24px',
           fontFamily: 'Montserrat,sans-serif',
+          margin: '0',
+          lineHeight: '90%',
           [breakpoints.down('sm')]: {
             fontSize: '20px',
           },
