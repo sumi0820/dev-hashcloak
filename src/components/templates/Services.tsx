@@ -11,7 +11,6 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     flexDirection: 'column',
     height: '100vh',
     padding: '.7rem 25rem',
-    backgroundColor: '#F6F9FB',
     [breakpoints.down('xs')]: {},
   },
   header: {

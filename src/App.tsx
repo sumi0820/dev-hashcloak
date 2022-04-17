@@ -11,10 +11,10 @@ const theme = createTheme({
     MuiCssBaseline: {
       '@global': {
         body: {
-          // backgroundColor: '#FBF8F8',
           WebkitFontSmoothing: 'auto',
           margin: 0,
           padding: 0,
+          backgroundColor: '#ffff',
         },
         h1: {
           fontSize: '96px',
@@ -66,6 +66,18 @@ const theme = createTheme({
           lineHeight: '90%',
           [breakpoints.down('sm')]: {
             fontSize: '20px',
+          },
+          [breakpoints.down('xs')]: {
+            fontSize: '4rem',
+          },
+        },
+        h6: {
+          fontSize: '18px',
+          fontFamily: 'Montserrat,sans-serif',
+          margin: '0',
+          lineHeight: '90%',
+          [breakpoints.down('sm')]: {
+            fontSize: '16px',
           },
           [breakpoints.down('xs')]: {
             fontSize: '4rem',

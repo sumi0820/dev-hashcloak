@@ -5,6 +5,7 @@ import MainVisual from 'components/templates/MainVisual';
 import Services from 'components/templates/Services';
 import Mission from 'components/templates/Mission';
 import Products from 'components/templates/Products';
+import Research from 'components/templates/Research';
 import Footer from '../templates/Footer';
 
 const useStyles = makeStyles(({ breakpoints, palette }) => ({
@@ -39,6 +40,7 @@ const HomePage: React.FC = () => {
         <Mission />
         <Products />
         <Services />
+        <Research />
         <Footer />
       </div>
     </>
