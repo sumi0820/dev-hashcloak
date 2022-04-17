@@ -1,106 +1,47 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import bespoke from '../../assets/services-bespoke.png';
+import audits from '../../assets/services-audits.png';
+import advisory from '../../assets/services-advisory.png';
 
 const useStyles = makeStyles(({ breakpoints, palette }) => ({
   container: {
     display: 'flex',
-    justifyContent: 'space-around',
     alignItems: 'center',
-    height: '100vh',
-    [breakpoints.down('xs')]: {
-      flexDirection: 'column-reverse',
-      justifyContent: 'center',
-      minHeight: '0',
-    },
-  },
-  wrapperLeft: {
-    display: 'flex',
-    justifyContent: 'flex-start',
     flexDirection: 'column',
-    [breakpoints.down('xs')]: {
-      alignItems: 'center',
-    },
+    height: '100vh',
+    padding: '.7rem 25rem',
+    backgroundColor: '#F6F9FB',
+    [breakpoints.down('xs')]: {},
+  },
+  header: {
+    textAlign: 'center',
+    marginTop: '10rem !important',
+    marginBottom: '5rem !important',
   },
   title: {
-    color: palette.primary.main,
+    color: palette.primary.dark,
     fontWeight: 'bold',
-    marginTop: '0px',
+    marginBottom: '2rem !important',
+    [breakpoints.down('sm')]: {},
+    [breakpoints.down('xs')]: {},
+  },
+  subtitle: {
+    color: palette.primary.dark,
+    [breakpoints.down('sm')]: {},
+    [breakpoints.down('xs')]: {},
+  },
 
-    [breakpoints.down('sm')]: {
-      fontSize: '60px',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '48px',
-    },
+  contents: {
+    display: 'flex',
+    alignItems: 'start',
   },
-  subtext: {
-    maxWidth: '600px',
-    fontSize: '1.5rem',
-    marginTop: '-60px',
-    fontStyle: 'italic',
-    lineHeight: '1.1em',
-    [breakpoints.down('sm')]: {
-      fontSize: '24px',
-      marginTop: '-30px',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '20px',
-      marginTop: '-10px',
-    },
-  },
-  wrapperRight: {
+  content: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-  },
-  logo: {
-    objectFit: 'contain',
-    maxHeight: '300px',
-    [breakpoints.down('sm')]: {
-      objectFit: 'contain',
-      maxHeight: '200px',
-    },
-    [breakpoints.down('xs')]: {
-      objectFit: 'contain',
-      maxHeight: '150px',
-    },
-  },
-  text: {
-    fontWeight: 'normal',
-    marginTop: '-30px',
-    color: palette.secondary.dark,
-    [breakpoints.down('sm')]: {
-      fontSize: '24px',
-      marginTop: '-10px',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '20px',
-      marginTop: '-6px',
-    },
-  },
-
-  buttons: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyItems: 'space-between',
-  },
-  button: {
-    backgroundColor: palette.primary.main,
-    color: '#ffffff',
-    margin: '0 5px',
-    '&:hover': {
-      background: palette.primary.dark,
-      color: '#ffffff',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '.7rem',
-      margin: '0 3px',
-      padding: '.2rem .2rem .2rem .2rem',
-    },
-  },
-  card: {
-    margin: 48,
-    width: '300px',
+    margin: '0 4px',
+    maxWidth: '300px',
   },
 }));
 
@@ -109,8 +50,41 @@ const Services: React.FC = () => {
 
   return (
     <div className={classes.container} id="services">
-      <div className={classes.wrapperLeft}>
-        <h1>Services</h1>
+      <div className={classes.header}>
+        <h2 className={classes.title}>Services</h2>
+      </div>
+      <div className={classes.contents}>
+        <div className={classes.content}>
+          <img src={bespoke} alt="Bespoke" />
+          <h5>Bespoke R&amp;D</h5>
+          <p>
+            Have a problem that can leverage anonymous network, ZKPs, MPC or
+            another privacy enhancing technique?
+            <br />
+            We can help get you started and assist your team with the initial
+            prototyping phase of integrating these tools into your product.
+          </p>
+        </div>
+        <div className={classes.content}>
+          <img src={audits} alt="security-audits" />
+          <h5>Security Audits</h5>
+          <p>
+            We assist teams to securely integrate advanced cryptographic tooling
+            into their product and conduct security reviews towards that end.
+          </p>
+        </div>
+        <div className={classes.content}>
+          <img src={advisory} alt="advisory" />
+          <h5>Advisory</h5>
+          <p>
+            Need someone that can stay on top of the ongoings in the crypto
+            (graphy and currency) space in order to get a step ahead of the
+            competition?
+            <br />
+            We assist teams with developing strategies with respect to privacy
+            enhancing technology in the fast moving cryptocurrency industry
+          </p>
+        </div>
       </div>
     </div>
   );
