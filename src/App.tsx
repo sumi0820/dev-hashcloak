@@ -11,7 +11,7 @@ const theme = createTheme({
     MuiCssBaseline: {
       '@global': {
         body: {
-          backgroundColor: '#FBF8F8',
+          // backgroundColor: '#FBF8F8',
           WebkitFontSmoothing: 'auto',
           margin: 0,
           padding: 0,
@@ -51,6 +51,7 @@ const theme = createTheme({
         h4: {
           fontSize: '34px',
           fontFamily: 'Montserrat,sans-serif',
+          margin: '0',
           [breakpoints.down('sm')]: {
             fontSize: '24px',
           },
