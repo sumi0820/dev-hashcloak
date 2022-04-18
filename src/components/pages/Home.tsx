@@ -8,6 +8,7 @@ import Products from 'components/templates/Products';
 import Research from 'components/templates/Research';
 import Supporters from 'components/templates/Supporters';
 import Announcements from 'components/templates/Announcements';
+import Contact from 'components/templates/Contact';
 import Footer from '../templates/Footer';
 
 const useStyles = makeStyles(({ breakpoints, palette }) => ({
@@ -45,6 +46,7 @@ const HomePage: React.FC = () => {
         <Research />
         <Supporters />
         <Announcements />
+        <Contact />
         <Footer />
       </div>
     </>

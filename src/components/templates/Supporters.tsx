@@ -20,7 +20,7 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     flexDirection: 'column',
     padding: '.7rem 18rem',
     paddingBottom: '10rem',
-    backgroundImage: 'linear-gradient(to top, #2eb3ff, #fff)',
+    backgroundImage: 'linear-gradient(to left, #c0e3e5, #fff)',
     [breakpoints.down('xs')]: {},
   },
   header: {
@@ -44,6 +44,9 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
   contents: {
     width: '100%',
     flexWrap: 'wrap',
+    // backgroundColor: '#c0e3e5',
+    // backgroundImage: 'linear-gradient(to left, #c0e3e5, #fff)',
+    borderRadius: '10px',
   },
   content: {
     display: 'flex',
@@ -57,23 +60,6 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
   logoPng: {
     objectFit: 'contain',
     width: '100px',
-    margin: '0 10px',
-  },
-  biggerLogo: {
-    objectFit: 'contain',
-    width: '200px',
-  },
-  texts: {
-    maxWidth: '500px',
-    textAlign: 'left',
-  },
-  socialMediaIcons: {
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  socialMedia: {
-    objectFit: 'contain',
-    width: '30px',
     margin: '0 10px',
   },
 }));
@@ -162,13 +148,13 @@ const Supporters: React.FC = () => {
         justify="center"
       >
         <Grid item xs={4} className={classes.content}>
-          <img src={celo} alt="celo" className={classes.logo} />
+          <img src={esp} alt="esp" className={classes.logo} />
         </Grid>
         <Grid item xs={4} className={classes.content}>
           <img src={binance} alt="binance" className={classes.logo} />
         </Grid>
         <Grid item xs={4} className={classes.content}>
-          <img src={esp} alt="esp" className={classes.logo} />
+          <img src={celo} alt="celo" className={classes.logo} />
         </Grid>
       </Grid>
     </div>

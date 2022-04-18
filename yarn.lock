@@ -10100,6 +10100,11 @@ react-burger-menu@^3.0.6:
     prop-types "^15.7.2"
     snapsvg-cjs "0.0.6"
 
+react-calendly@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-calendly/-/react-calendly-3.0.3.tgz#b54eb8dd5a07fe0d12086f1bde910312a4e2466e"
+  integrity sha512-dUCFPGVcqs+KTZ/2f243RwKlo8XgluDJtr/HSKa91COtbIq7DatCcCyHWYCePKxFClX/PQToBOooNWR5jD0OxA==
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-11.0.4.tgz"

@@ -65,8 +65,8 @@ const Navbar: React.FunctionComponent = () => {
         <HashLink to="#supporters" smooth className={classes.link}>
           Supporters
         </HashLink>
-        <HashLink to="#blog" smooth className={classes.link}>
-          Blogs
+        <HashLink to="#announcements" smooth className={classes.link}>
+          Announcements
         </HashLink>
         <HashLink to="#contact" smooth className={classes.link}>
           Contact
