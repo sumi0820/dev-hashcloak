@@ -8,7 +8,8 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     alignItems: 'center',
     flexDirection: 'column',
     height: '100vh',
-    padding: '.7rem 25rem',
+    padding: '.7rem 18rem',
+    paddingBottom: '10rem',
     backgroundColor: '#F6F9FB',
     [breakpoints.down('xs')]: {},
   },
@@ -33,7 +34,7 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
 
   contents: {
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     width: '100%',
     flexWrap: 'wrap',
   },

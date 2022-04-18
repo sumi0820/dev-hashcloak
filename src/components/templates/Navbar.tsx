@@ -9,7 +9,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundImage: 'linear-gradient(to right, #2eb3ff, #000000)',
-    padding: '.7rem 25rem',
+    padding: '.7rem 18rem',
     position: 'fixed',
     top: '0',
     width: '100%',

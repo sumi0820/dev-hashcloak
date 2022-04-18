@@ -11,7 +11,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     height: '100vh',
     backgroundImage: 'linear-gradient(to right bottom, #2eb3ff, #fff)',
     color: 'white',
-    padding: '.7rem 25rem',
+    padding: '.7rem 18rem',
     [breakpoints.down('xs')]: {
       flexDirection: 'column-reverse',
       justifyContent: 'center',

@@ -10,7 +10,8 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     alignItems: 'center',
     flexDirection: 'column',
     height: '100vh',
-    padding: '.7rem 25rem',
+    padding: '.7rem 18rem',
+    paddingBottom: '10rem',
     [breakpoints.down('xs')]: {},
   },
   header: {
