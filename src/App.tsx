@@ -58,9 +58,7 @@ const theme = createTheme({
           [breakpoints.down('sm')]: {
             fontSize: '24px',
           },
-          [breakpoints.down('xs')]: {
-            fontSize: '4rem',
-          },
+          [breakpoints.down('xs')]: {},
         },
         h5: {
           fontSize: '24px',

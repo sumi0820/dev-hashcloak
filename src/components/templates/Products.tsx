@@ -15,43 +15,69 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     padding: '.7rem 18rem',
     paddingBottom: '10rem',
     backgroundColor: '#F6F9FB',
-    [breakpoints.down('xs')]: {},
+    [breakpoints.down('md')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('sm')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('xs')]: {
+      padding: '5rem 2rem',
+    },
   },
   header: {
     textAlign: 'center',
     marginTop: '10rem !important',
     marginBottom: '5rem !important',
     width: '70%',
+    [breakpoints.down('sm')]: {
+      width: '100%',
+    },
+    [breakpoints.down('xs')]: {
+      marginTop: '0 !important',
+      marginBottom: '2rem !important',
+    },
   },
   title: {
     color: palette.primary.dark,
     fontWeight: 'bold',
     marginBottom: '2rem !important',
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
-  },
-  subtitle: {
-    color: palette.primary.dark,
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
   },
 
   contents: {
     display: 'flex',
     alignItems: 'center',
+    [breakpoints.down('sm')]: {
+      flexDirection: 'column',
+    },
   },
+
   content: {
     display: 'flex',
     flexDirection: 'column',
     maxWidth: '300px',
+    [breakpoints.down('sm')]: {
+      padding: '10px 0',
+    },
   },
   logo: {
     objectFit: 'contain',
     width: '250px',
+    [breakpoints.down('sm')]: {
+      width: '200px',
+    },
+    [breakpoints.down('xs')]: {
+      marginBottom: '-20px',
+    },
   },
   biggerLogo: {
     objectFit: 'contain',
-    width: '200px',
+    maxWidth: '200px',
+    [breakpoints.down('sm')]: {
+      width: '150px',
+    },
   },
   texts: {
     maxWidth: '500px',
@@ -65,6 +91,13 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     objectFit: 'contain',
     width: '30px',
     margin: '0 10px',
+  },
+  description: {
+    color: palette.secondary.dark,
+    [breakpoints.down('xs')]: {
+      marginTop: '0 !important',
+      marginBottom: '6px !important',
+    },
   },
 }));
 
@@ -89,7 +122,9 @@ const Products: React.FC = () => {
           >
             <img src={mesonLogo} alt="meson" className={classes.logo} />
             <h4>Meson</h4>
-            <p>Meson is a mix network for cryptocurrency transactions.</p>
+            <p className={classes.description}>
+              A mix network for cryptocurrency transactions
+            </p>
           </a>
           <div className={classes.socialMediaIcons}>
             <a
@@ -135,9 +170,8 @@ const Products: React.FC = () => {
               className={classes.biggerLogo}
             />
             <h4>MesonSafe</h4>
-            <p>
-              Meson wallet is a privacy-focused wallet for managing your crypto
-              assets.
+            <p className={classes.description}>
+              A privacy-focused wallet for managing your crypto assets
             </p>
           </a>
           <div className={classes.socialMediaIcons}>
@@ -173,20 +207,22 @@ const Products: React.FC = () => {
               className={classes.logo}
             />
             <h4>StoffelMPC</h4>
-            <p>
-              StoffelMPC is a framework for building expressive confidential
-              blockchain applications using multiparty computation (MPC)
+            <p className={classes.description}>
+              A framework for building expressive confidential blockchain
+              applications using multiparty computation (MPC)
             </p>
           </a>
-          <div className={classes.socialMedia}>
-            <a href="https://google.com">
-              <img src="" alt="" />
-            </a>
-            <a href="https://google.com">
-              <img src="" alt="" />
-            </a>
-            <a href="https://google.com">
-              <img src="" alt="" />
+          <div className={classes.socialMediaIcons}>
+            <a
+              href="https://twitter.com/StoffelFinance"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={twitterLogo}
+                alt="twitter"
+                className={classes.socialMedia}
+              />
             </a>
           </div>
         </div>
