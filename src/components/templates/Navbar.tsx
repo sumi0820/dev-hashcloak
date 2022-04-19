@@ -46,6 +46,12 @@ const useStyles = makeStyles(({ breakpoints }) => ({
       display: 'block',
     },
   },
+  logo: {
+    [breakpoints.down('xs')]: {
+      objectFit: 'contain',
+      width: '100px',
+    },
+  },
 }));
 
 const Navbar: React.FunctionComponent = () => {
@@ -54,7 +60,7 @@ const Navbar: React.FunctionComponent = () => {
   return (
     <header className={classes.container}>
       <HashLink to="#main" smooth className={classes.link}>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className={classes.logo} />
       </HashLink>
       <div className={classes.content}>
         <HashLink to="#mission" smooth className={classes.link}>

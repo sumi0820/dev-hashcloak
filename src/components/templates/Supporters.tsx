@@ -50,10 +50,8 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     color: palette.primary.dark,
     fontWeight: 'bold',
     marginBottom: '2rem !important',
-    width: '100%',
-    [breakpoints.down('md')]: {
-      whiteSpace: 'normal',
-    },
+    whiteSpace: 'normal',
+    [breakpoints.down('md')]: {},
     [breakpoints.down('xs')]: {
       marginBottom: '.6rem !important',
     },
