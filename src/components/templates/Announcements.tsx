@@ -39,13 +39,12 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     color: palette.primary.dark,
     fontWeight: 'bold',
     marginBottom: '2rem !important',
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
+    [breakpoints.down('md')]: {
+      whiteSpace: 'normal',
+    },
   },
   subtitle: {
     color: palette.primary.dark,
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
   },
   contents: {
     display: 'flex',

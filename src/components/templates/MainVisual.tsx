@@ -25,6 +25,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
+      height: '80vh',
     },
   },
   wrapperLeft: {

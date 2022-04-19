@@ -16,7 +16,6 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     width: '100%',
     boxShadow: '0 1px 1px -1px rgba(0, 0, 0, 0.5)',
     zIndex: 99,
-
     [breakpoints.down('md')]: {
       paddingRight: '8rem',
       paddingLeft: '8rem',

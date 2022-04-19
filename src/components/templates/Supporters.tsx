@@ -79,13 +79,16 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     objectFit: 'contain',
     width: '200px',
     margin: '0 10px',
+    [breakpoints.down('sm')]: {
+      width: '180px',
+    },
   },
   logoPng: {
     objectFit: 'contain',
     width: '100px',
     margin: '0 10px',
     [breakpoints.down('sm')]: {
-      width: '100%',
+      width: '80px',
     },
   },
 }));

@@ -10,19 +10,25 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     backgroundImage: 'linear-gradient(to right, #2eb3ff, #000000)',
     padding: '.7rem 10rem',
     width: '100%',
+    [breakpoints.down('md')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
     [breakpoints.down('sm')]: {
       paddingRight: '8rem',
       paddingLeft: '8rem',
     },
     [breakpoints.down('xs')]: {
-      paddingRight: '4rem',
-      paddingLeft: '4em',
+      paddingRight: '2rem',
+      paddingLeft: '2em',
     },
   },
   contentLeft: {
     color: 'white',
     textAlign: 'left',
     fontWeight: 'bold',
+    display: 'flex',
+    alignItems: 'center',
   },
   contentRight: {
     display: 'flex',
@@ -38,7 +44,9 @@ const Footer: React.FunctionComponent = () => {
     <footer className={classes.container}>
       <Grid container spacing={1}>
         <Grid item xs={6} className={classes.contentLeft}>
-          <p>{currentYear} HashCloak Inc.</p>
+          <p style={{ color: '#fff', margin: '0 0' }}>
+            {currentYear} HashCloak Inc.
+          </p>
         </Grid>
         <Grid item xs={6} className={classes.contentRight}>
           <SocialMedia />
