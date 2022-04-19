@@ -141,7 +141,7 @@ const theme = createTheme({
       dark: '#0084CB',
     },
     secondary: {
-      main: '#FF9169',
+      main: '#ffff',
       dark: '#868686',
     },
   },

@@ -7,7 +7,6 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
-    height: '100vh',
     padding: '.7rem 18rem',
     paddingBottom: '10rem',
     [breakpoints.down('xs')]: {},
