@@ -21,32 +21,52 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     padding: '.7rem 18rem',
     paddingBottom: '10rem',
     backgroundImage: 'linear-gradient(to left, #c0e3e5, #fff)',
-    [breakpoints.down('xs')]: {},
+    [breakpoints.down('md')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('sm')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('xs')]: {
+      padding: '5rem 2rem',
+    },
   },
   header: {
     textAlign: 'center',
     marginTop: '10rem !important',
     marginBottom: '5rem !important',
     width: '70%',
+    [breakpoints.down('sm')]: {
+      width: '100%',
+    },
+    [breakpoints.down('xs')]: {
+      marginTop: '0 !important',
+      marginBottom: '2rem !important',
+    },
   },
   title: {
     color: palette.primary.dark,
     fontWeight: 'bold',
     marginBottom: '2rem !important',
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
+    width: '100%',
+    [breakpoints.down('md')]: {
+      whiteSpace: 'normal',
+    },
   },
   subtitle: {
     color: palette.primary.dark,
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
   },
   contents: {
     width: '100%',
     flexWrap: 'wrap',
-    // backgroundColor: '#c0e3e5',
-    // backgroundImage: 'linear-gradient(to left, #c0e3e5, #fff)',
-    borderRadius: '10px',
+    [breakpoints.down('sm')]: {
+      flexDirection: 'column',
+    },
+    [breakpoints.down('xs')]: {
+      marginBottom: '40px',
+    },
   },
   content: {
     display: 'flex',
@@ -61,6 +81,9 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     objectFit: 'contain',
     width: '100px',
     margin: '0 10px',
+    [breakpoints.down('sm')]: {
+      width: '100%',
+    },
   },
 }));
 
@@ -78,7 +101,7 @@ const Supporters: React.FC = () => {
       </div>
       <Grid
         container
-        spacing={8}
+        spacing={3}
         className={classes.contents}
         alignItems="center"
         justify="center"
@@ -142,13 +165,18 @@ const Supporters: React.FC = () => {
       </div>
       <Grid
         container
-        spacing={8}
+        spacing={3}
         className={classes.contents}
         alignItems="center"
         justify="center"
       >
         <Grid item xs={4} className={classes.content}>
-          <img src={esp} alt="esp" className={classes.logo} />
+          <img
+            src={esp}
+            alt="esp"
+            className={classes.logo}
+            style={{ width: '150px' }}
+          />
         </Grid>
         <Grid item xs={4} className={classes.content}>
           <img src={binance} alt="binance" className={classes.logo} />
