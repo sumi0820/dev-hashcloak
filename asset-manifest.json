@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.js": "/static/js/main.eed1831c.chunk.js",
+    "main.js.map": "/static/js/main.eed1831c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3f4dec9c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3f4dec9c.js.map",
+    "static/js/2.9247503c.chunk.js": "/static/js/2.9247503c.chunk.js",
+    "static/js/2.9247503c.chunk.js.map": "/static/js/2.9247503c.chunk.js.map",
+    "static/js/3.5b2cf55c.chunk.js": "/static/js/3.5b2cf55c.chunk.js",
+    "static/js/3.5b2cf55c.chunk.js.map": "/static/js/3.5b2cf55c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.9247503c.chunk.js.LICENSE.txt": "/static/js/2.9247503c.chunk.js.LICENSE.txt",
+    "static/media/announcements-blogs.8a44f0a3.png": "/static/media/announcements-blogs.8a44f0a3.png",
+    "static/media/element-logo.5474dc56.svg": "/static/media/element-logo.5474dc56.svg",
+    "static/media/main-visual-bg.66a5301c.png": "/static/media/main-visual-bg.66a5301c.png",
+    "static/media/mission-image.5f28ddbc.png": "/static/media/mission-image.5f28ddbc.png",
+    "static/media/products-meson-logo.744ad402.png": "/static/media/products-meson-logo.744ad402.png",
+    "static/media/products-mesonSafe-logo.551f1904.png": "/static/media/products-mesonSafe-logo.551f1904.png",
+    "static/media/products-stoffelMPC-logo.ca028588.png": "/static/media/products-stoffelMPC-logo.ca028588.png",
+    "static/media/supporters-binance-fellowship.71ee9faa.png": "/static/media/supporters-binance-fellowship.71ee9faa.png",
+    "static/media/supporters-celo.5caacca2.png": "/static/media/supporters-celo.5caacca2.png",
+    "static/media/supporters-esp.4a5714a2.png": "/static/media/supporters-esp.4a5714a2.png",
+    "static/media/supporters-ethereum-foundation.c4536324.png": "/static/media/supporters-ethereum-foundation.c4536324.png",
+    "static/media/supporters-hakka-finance.d5a00b72.svg": "/static/media/supporters-hakka-finance.d5a00b72.svg",
+    "static/media/supporters-light-protocol.df823fe8.svg": "/static/media/supporters-light-protocol.df823fe8.svg",
+    "static/media/supporters-partner-protocol.8bbb0615.png": "/static/media/supporters-partner-protocol.8bbb0615.png",
+    "static/media/supporters-sacred-finance.37b28a3d.svg": "/static/media/supporters-sacred-finance.37b28a3d.svg",
+    "static/media/twitter-logo-white.27cda7bd.png": "/static/media/twitter-logo-white.27cda7bd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f4dec9c.js",
+    "static/js/2.9247503c.chunk.js",
+    "static/js/main.eed1831c.chunk.js"
+  ]
+}
