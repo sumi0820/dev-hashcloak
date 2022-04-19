@@ -48,7 +48,7 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
       width: '300px',
     },
     [breakpoints.down('xs')]: {
-      width: '150px',
+      width: '30%',
     },
   },
   texts: {

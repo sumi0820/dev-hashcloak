@@ -37,8 +37,9 @@ const theme = createTheme({
             margin: '5px 0 !important',
           },
           [breakpoints.down('xs')]: {
-            fontSize: '2.1rem',
-            margin: '8px 0 !important',
+            fontSize: '1.3rem',
+            margin: '2px 0 !important',
+            whiteSpace: 'nowrap',
           },
         },
         h3: {
@@ -90,6 +91,11 @@ const theme = createTheme({
           letterSpacing: '-0.05em',
           [breakpoints.down('sm')]: {
             fontSize: '14px',
+          },
+          [breakpoints.down('xs')]: {
+            fontSize: '12px',
+            color: '#868686',
+            marginTop: '4px',
           },
         },
         li: {

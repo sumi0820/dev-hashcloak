@@ -11,29 +11,42 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     flexDirection: 'column',
     padding: '.7rem 18rem',
     paddingBottom: '10rem',
-    [breakpoints.down('xs')]: {},
+    [breakpoints.down('md')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('sm')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('xs')]: {
+      padding: '5rem 2rem',
+    },
   },
   header: {
     textAlign: 'center',
     marginTop: '10rem !important',
     marginBottom: '5rem !important',
+    [breakpoints.down('sm')]: {
+      width: '100%',
+    },
+    [breakpoints.down('xs')]: {
+      marginTop: '0 !important',
+      marginBottom: '2rem !important',
+    },
   },
   title: {
     color: palette.primary.dark,
     fontWeight: 'bold',
     marginBottom: '2rem !important',
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
-  },
-  subtitle: {
-    color: palette.primary.dark,
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
   },
 
   contents: {
     display: 'flex',
     alignItems: 'start',
+    [breakpoints.down('sm')]: {
+      flexDirection: 'column',
+    },
   },
   content: {
     display: 'flex',

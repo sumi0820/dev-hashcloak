@@ -40,6 +40,13 @@ const useStyles = makeStyles(({ breakpoints }) => ({
       width: '100%',
     },
   },
+  title: {
+    [breakpoints.down('xs')]: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+  },
   subtext: {
     width: '500px',
     margin: '10px 0',
@@ -48,6 +55,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     },
     [breakpoints.down('xs')]: {
       width: '100%',
+      textAlign: 'center',
     },
   },
   wrapperRight: {
@@ -69,7 +77,7 @@ const MainVisual: React.FC = () => {
   return (
     <div className={classes.container} id="main">
       <div className={classes.wrapperLeft}>
-        <div>
+        <div className={classes.title}>
           <h2>Building </h2>
           <h2>Vertically-Integrated</h2>
           <h2>Privacy By Defaults</h2>
