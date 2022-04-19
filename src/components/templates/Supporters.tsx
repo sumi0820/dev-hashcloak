@@ -54,6 +54,9 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     [breakpoints.down('md')]: {
       whiteSpace: 'normal',
     },
+    [breakpoints.down('xs')]: {
+      marginBottom: '.6rem !important',
+    },
   },
   subtitle: {
     color: palette.primary.dark,
