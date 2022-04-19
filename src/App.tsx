@@ -82,7 +82,7 @@ const theme = createTheme({
             fontSize: '16px',
           },
           [breakpoints.down('xs')]: {
-            fontSize: '4rem',
+            fontSize: '.8rem',
           },
         },
         p: {
