@@ -12,26 +12,54 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     backgroundImage: 'linear-gradient(to right bottom, #2eb3ff, #fff)',
     color: 'white',
     padding: '.7rem 18rem',
+    [breakpoints.down('md')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('sm')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
     [breakpoints.down('xs')]: {
-      flexDirection: 'column-reverse',
+      padding: '0px 2rem',
+      flexDirection: 'column',
       justifyContent: 'center',
-      minHeight: '0',
+      alignItems: 'center',
+      height: '100vh',
     },
   },
   wrapperLeft: {
     display: 'flex',
     justifyContent: 'flex-start',
     flexDirection: 'column',
+    [breakpoints.down('md')]: {
+      width: '50%',
+    },
     [breakpoints.down('xs')]: {
       alignItems: 'center',
+      width: '100%',
     },
   },
   subtext: {
     width: '500px',
     margin: '10px 0',
+    [breakpoints.down('sm')]: {
+      width: '100%',
+    },
+    [breakpoints.down('xs')]: {
+      width: '100%',
+    },
   },
   wrapperRight: {
-    [breakpoints.down('xs')]: {},
+    objectFit: 'contain',
+    [breakpoints.down('sm')]: {
+      width: '100%',
+    },
+  },
+  background: {
+    [breakpoints.down('xs')]: {
+      width: '100%',
+    },
   },
 }));
 
@@ -54,7 +82,7 @@ const MainVisual: React.FC = () => {
         <SocialMedia />
       </div>
       <div className={classes.wrapperRight}>
-        <img src={bg} alt="main-visual-bg" />
+        <img src={bg} alt="main-visual-bg" className={classes.background} />
       </div>
     </div>
   );

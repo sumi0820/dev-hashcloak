@@ -23,7 +23,7 @@ const theme = createTheme({
             fontSize: '60px',
           },
           [breakpoints.down('xs')]: {
-            fontSize: '4rem',
+            fontSize: '.8rem',
           },
         },
         h2: {
@@ -35,7 +35,8 @@ const theme = createTheme({
             fontSize: '48px',
           },
           [breakpoints.down('xs')]: {
-            fontSize: '4rem',
+            fontSize: '2.1rem',
+            whiteSpace: 'nowrap',
           },
         },
         h3: {
@@ -68,7 +69,7 @@ const theme = createTheme({
             fontSize: '20px',
           },
           [breakpoints.down('xs')]: {
-            fontSize: '4rem',
+            fontSize: '.9rem',
           },
         },
         h6: {
@@ -119,11 +120,14 @@ const theme = createTheme({
         a: {
           fontFamily: 'Amiko ,sans-serif',
           fontSize: '16px',
+          color: '#38C6F4',
           letterSpacing: '-0.05em',
           fontWeight: 'bold',
           textDecoration: 'none',
           textAlign: 'center',
-          '&:hover': {},
+          '&:hover': {
+            color: '#FF9169',
+          },
           [breakpoints.up('sm')]: {
             fontSize: '14px',
           },

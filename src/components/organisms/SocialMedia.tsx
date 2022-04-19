@@ -11,6 +11,9 @@ const useStyles = makeStyles(() => ({
   logo: {
     objectFit: 'contain',
     width: '36px',
+    '&:hover': {
+      filter: 'invert(50%) grayscale(50%)',
+    },
   },
 }));
 
