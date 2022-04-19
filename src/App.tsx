@@ -94,8 +94,8 @@ const theme = createTheme({
           },
           [breakpoints.down('xs')]: {
             fontSize: '12px',
-            color: '#868686',
             marginTop: '4px',
+            color: '#868686',
           },
         },
         li: {
@@ -129,7 +129,7 @@ const theme = createTheme({
           textDecoration: 'none',
           textAlign: 'center',
           '&:hover': {
-            color: '#FF9169',
+            color: '#FF9169 ',
           },
           [breakpoints.up('sm')]: {
             fontSize: '14px',

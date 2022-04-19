@@ -92,7 +92,7 @@ const Announcements: React.FC = () => {
           >
             <img src={newsletter} alt="newsletter" />
             <h5>HashCloak Newsletter</h5>
-            <p>
+            <p style={{ fontWeight: 'normal', color: '#868686' }}>
               Periodic updates about current HashCloak projects and offerings
             </p>
           </a>

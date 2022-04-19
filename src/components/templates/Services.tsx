@@ -54,6 +54,15 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     alignItems: 'center',
     margin: '0 4px',
     maxWidth: '300px',
+    [breakpoints.down('sm')]: {
+      marginBottom: '4px',
+    },
+  },
+  contentTitle: {
+    marginTop: '4px',
+  },
+  description: {
+    color: '#868686',
   },
 }));
 
@@ -68,8 +77,8 @@ const Services: React.FC = () => {
       <div className={classes.contents}>
         <div className={classes.content}>
           <img src={bespoke} alt="Bespoke" />
-          <h5>Bespoke R&amp;D</h5>
-          <p>
+          <h5 className={classes.contentTitle}>Bespoke R&amp;D</h5>
+          <p className={classes.description}>
             Have a problem that can leverage anonymous network, ZKPs, MPC or
             another privacy enhancing technique?
             <br />
@@ -79,16 +88,16 @@ const Services: React.FC = () => {
         </div>
         <div className={classes.content}>
           <img src={audits} alt="security-audits" />
-          <h5>Security Audits</h5>
-          <p>
+          <h5 className={classes.contentTitle}>Security Audits</h5>
+          <p className={classes.description}>
             We assist teams to securely integrate advanced cryptographic tooling
             into their product and conduct security reviews towards that end.
           </p>
         </div>
         <div className={classes.content}>
           <img src={advisory} alt="advisory" />
-          <h5>Advisory</h5>
-          <p>
+          <h5 className={classes.contentTitle}>Advisory</h5>
+          <p className={classes.description}>
             Need someone that can stay on top of the ongoings in the crypto
             (graphy and currency) space in order to get a step ahead of the
             competition?

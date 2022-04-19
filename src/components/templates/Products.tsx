@@ -97,10 +97,9 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
   },
   description: {
     color: palette.secondary.dark,
-    [breakpoints.down('xs')]: {
-      marginTop: '0 !important',
-      marginBottom: '6px !important',
-    },
+    marginTop: '0 !important',
+    marginBottom: '6px !important',
+    fontWeight: 'normal',
   },
 }));
 
