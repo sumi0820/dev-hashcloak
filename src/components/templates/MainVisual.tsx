@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import SocialMedia from 'components/organisms/SocialMedia';
+// import SocialMedia from 'components/organisms/SocialMedia';
 import bg from '../../assets/main-visual-bg.png';
 
 const useStyles = makeStyles(({ breakpoints }) => ({
@@ -25,13 +25,13 @@ const useStyles = makeStyles(({ breakpoints }) => ({
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '100vh',
     },
   },
   wrapperLeft: {
     display: 'flex',
     justifyContent: 'flex-start',
     flexDirection: 'column',
+    zIndex: 2,
     [breakpoints.down('md')]: {
       width: '50%',
     },
@@ -70,16 +70,16 @@ const MainVisual: React.FC = () => {
     <div className={classes.container} id="main">
       <div className={classes.wrapperLeft}>
         <div>
-          <h2>Privacy</h2>
-          <h2>Scalability</h2>
-          <h2>Distributed Systems</h2>
+          <h2>Building </h2>
+          <h2>Vertically-Integrated</h2>
+          <h2>Privacy By Defaults</h2>
         </div>
         <h5 className={classes.subtext}>
-          Hashcloak is an independent research lab that targets problems
-          surrounding privacy-preserving technologies and blockchain
-          infrastructure design.
+          HashCloak is an independent research lab focused on helping
+          organizations and blockchain communities integrate a privacy-first
+          approach into their processes.
         </h5>
-        <SocialMedia />
+        {/* <SocialMedia /> */}
       </div>
       <div className={classes.wrapperRight}>
         <img src={bg} alt="main-visual-bg" className={classes.background} />

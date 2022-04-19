@@ -33,10 +33,12 @@ const theme = createTheme({
           lineHeight: '90%',
           [breakpoints.up('sm')]: {
             fontSize: '48px',
+            whiteSpace: 'nowrap',
+            margin: '5px 0 !important',
           },
           [breakpoints.down('xs')]: {
             fontSize: '2.1rem',
-            whiteSpace: 'nowrap',
+            margin: '8px 0 !important',
           },
         },
         h3: {
@@ -90,9 +92,6 @@ const theme = createTheme({
           letterSpacing: '-0.05em',
           [breakpoints.down('sm')]: {
             fontSize: '14px',
-          },
-          [breakpoints.down('xs')]: {
-            fontSize: '4rem',
           },
         },
         li: {

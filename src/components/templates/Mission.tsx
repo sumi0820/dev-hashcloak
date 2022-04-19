@@ -9,7 +9,17 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     flexDirection: 'column',
     padding: '.7rem 18rem',
     paddingBottom: '10rem',
-    [breakpoints.down('xs')]: {},
+    [breakpoints.down('md')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('sm')]: {
+      paddingRight: '8rem',
+      paddingLeft: '8rem',
+    },
+    [breakpoints.down('xs')]: {
+      padding: '5rem 2rem',
+    },
   },
 
   title: {
@@ -17,41 +27,13 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
     fontWeight: 'bold',
     marginTop: '10rem !important',
     marginBottom: '7rem !important',
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
-  },
-  subtitle: {
-    color: palette.primary.dark,
-    [breakpoints.down('sm')]: {},
-    [breakpoints.down('xs')]: {},
-  },
-  subtext: {
-    maxWidth: '600px',
-    fontSize: '1.5rem',
-    marginTop: '-60px',
-    fontStyle: 'italic',
-    lineHeight: '1.1em',
     [breakpoints.down('sm')]: {
-      fontSize: '24px',
-      marginTop: '-30px',
+      marginTop: '10rem !important',
+      marginBottom: '7rem !important',
     },
     [breakpoints.down('xs')]: {
-      fontSize: '20px',
-      marginTop: '-10px',
-    },
-  },
-
-  text: {
-    fontWeight: 'normal',
-    marginTop: '-30px',
-    color: palette.secondary.dark,
-    [breakpoints.down('sm')]: {
-      fontSize: '24px',
-      marginTop: '-10px',
-    },
-    [breakpoints.down('xs')]: {
-      fontSize: '20px',
-      marginTop: '-6px',
+      marginTop: '0 !important',
+      marginBottom: '2rem !important',
     },
   },
   contents: {
@@ -62,6 +44,12 @@ const useStyles = makeStyles(({ breakpoints, palette }) => ({
   img: {
     objectFit: 'contain',
     width: '400px',
+    [breakpoints.down('sm')]: {
+      width: '300px',
+    },
+    [breakpoints.down('xs')]: {
+      width: '150px',
+    },
   },
   texts: {
     maxWidth: '500px',
@@ -78,12 +66,10 @@ const Mission: React.FC = () => {
       <div className={classes.contents}>
         <img src={mission} alt="mission" className={classes.img} />
         <div className={classes.texts}>
-          <h5 className={classes.subtitle}>Lorem Ipsum</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequatur culpa itaque praesentium, molestiae qui nisi iste ullam
-            soluta numquam cupiditate modi laborum odit! Minus dolor est sunt
-            sed, amet itaque.
+            Our mission is to make it as easy as possible to use privacy
+            enhancing technology (PET) securely and with the best UX possible
+            for the cryptocurrency industry.
           </p>
         </div>
       </div>
