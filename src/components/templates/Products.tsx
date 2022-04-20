@@ -1,11 +1,14 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import mesonLogo from '../../assets/products-meson-logo.png';
 import mesonSafeLogo from '../../assets/products-mesonSafe-logo.png';
 import stoffelMPCLogo from '../../assets/products-stoffelMPC-logo.png';
 import twitterLogo from '../../assets/twitter-logo.png';
+import developerSurvey from '../../assets/products-developer-survey.svg';
 import githubLogo from '../../assets/github-logo-black.png';
 import elementLogo from '../../assets/element-logo.svg';
+import mkBook from '../../assets/products-mkbook.png';
 
 const useStyles = makeStyles(({ breakpoints, palette }) => ({
   container: {
@@ -130,17 +133,6 @@ const Products: React.FC = () => {
           </a>
           <div className={classes.socialMediaIcons}>
             <a
-              href="https://app.element.io/#/room/#meson-community:matrix.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={elementLogo}
-                alt="element"
-                className={classes.socialMedia}
-              />
-            </a>
-            <a
               href="https://twitter.com/MesonMixnet"
               target="_blank"
               rel="noopener noreferrer"
@@ -162,13 +154,28 @@ const Products: React.FC = () => {
                 className={classes.socialMedia}
               />
             </a>
+            <a
+              href="https://app.element.io/#/room/#meson-community:matrix.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={elementLogo}
+                alt="element"
+                className={classes.socialMedia}
+              />
+            </a>
           </div>
         </div>
         <div className={classes.content}>
-          <a href="https://google.com">
+          <a
+            href="https://mesonmix.net/wallet"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={mesonSafeLogo}
-              alt="meson"
+              alt="meson-safe"
               className={classes.biggerLogo}
             />
             <h4>MesonSafe</h4>
@@ -202,7 +209,7 @@ const Products: React.FC = () => {
           </div>
         </div>
         <div className={classes.content}>
-          <a href="https://google.com">
+          <a>
             <img
               src={stoffelMPCLogo}
               alt="stoffelMPC"
@@ -223,6 +230,36 @@ const Products: React.FC = () => {
               <img
                 src={twitterLogo}
                 alt="twitter"
+                className={classes.socialMedia}
+              />
+            </a>
+            <a
+              href="https://github.com/hashcloak/stoffelMPC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={githubLogo}
+                alt="github"
+                className={classes.socialMedia}
+              />
+            </a>
+            <a
+              href="https://cryptpad.fr/form/#/3/form/view/3b4ed9a8bde9ba12924acdd86fad2a39/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={developerSurvey}
+                alt="developer-survey"
+                className={classes.socialMedia}
+                style={{ width: '25px' }}
+              />
+            </a>
+            <a href="https:" target="_blank" rel="noopener noreferrer">
+              <img
+                src={mkBook}
+                alt="documentation"
                 className={classes.socialMedia}
               />
             </a>
