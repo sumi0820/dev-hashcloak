@@ -93,7 +93,6 @@ const theme = createTheme({
             fontSize: '14px',
           },
           [breakpoints.down('xs')]: {
-            fontSize: '12px',
             marginTop: '4px',
             color: '#868686',
           },

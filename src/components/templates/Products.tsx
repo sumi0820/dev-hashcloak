@@ -209,7 +209,11 @@ const Products: React.FC = () => {
           </div>
         </div>
         <div className={classes.content}>
-          <a>
+          <a
+            href="https://stoffelmpc.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={stoffelMPCLogo}
               alt="stoffelMPC"
@@ -256,7 +260,11 @@ const Products: React.FC = () => {
                 style={{ width: '25px' }}
               />
             </a>
-            <a href="https:" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://docs.stoffelmpc.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={mkBook}
                 alt="documentation"
